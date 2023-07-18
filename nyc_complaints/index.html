@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Marker Clusters</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Marker cluster JavaScript code -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+
+    <!-- Marker cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style2.css">
+
+  </head>
+  <body>
+
+    <label for="complaint_type">Complaint Type</label>
+    <select id="complaint_type" name="complaint_type">
+      <option>Illegal Fireworks</option>
+      <option>Illegal Parking</option>
+      <option selected>Rodent</option>
+    </select>
+
+    <label for="borough">Complaint Type</label>
+    <select id="borough" name="borough">
+      <option>ALL</option>
+      <option>MANHATTAN</option>
+      <option>BRONX</option>
+      <option selected>BROOKLYN</option>
+      <option>STATEN ISLAND</option>
+      <option>QUEENS</option>
+    </select>
+
+    <!-- Parent container for MAP -->
+    <div id="map_container"></div>
+
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+  </body>
+</html>
